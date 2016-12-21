@@ -7,18 +7,27 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
+                var delay = 500;
                 $('.banner').fadeIn();
                 $('.nav').fadeIn("slow");
-                // $('.main').fadeIn(1500);
                 $('.nav').click(function(){
+                    //Troll toggle
                     $('.nav').slideToggle();
-                    $('h1').text("You just got trolled");
-                    $('.trolled').fadeIn(1500);
-                    $('.trolled').append('Time to reload your page');
+                    $('.rick').slideDown();
+                    $('.main').slideUp();
+                    $('button').slideUp();
+                    setTimeout(function(){
+                        $('h1').text("You've just been rickrolled");
+                        $('.trolled').fadeIn(1500);
+                        $('.trolled').append('Time to reload your page');
+                    }, delay)
                 });
                 $('button').click(function(){
+                    //Main content reveal toggle
                     $('button').slideUp();
-                    $('.main').slideDown(1500);    
+                    setTimeout(function(){
+                        $('.main').slideDown(1000);
+                    }, delay)
                 })
                     // $('h1').append('<img src="troll.png" alt="troll" class="trolled" style="width:100px;height:100px;">');
             });
@@ -37,6 +46,18 @@
             </div>
             <button>Click me to reveal content!</button>
             <div class="main">
+                <!-- <p>wat</p> -->
+                <div class="content">
+                </div>
+                <div class="content">
+                </div>
+                <div class="content">
+                </div>
+                <div class="content">
+                </div>
+            </div>
+            <div class="rick">
+                <img src="ricky.jpg" alt="rick" style="width:786px;height:535px">
             </div>
         </div>
     </body>
