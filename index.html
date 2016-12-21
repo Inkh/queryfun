@@ -9,12 +9,18 @@
             $(document).ready(function(){
                 $('.banner').fadeIn();
                 $('.nav').fadeIn("slow");
-                $('.main').fadeIn(1500);
+                // $('.main').fadeIn(1500);
                 $('.nav').click(function(){
                     $('.nav').slideToggle();
                     $('h1').text("You just got trolled");
-                    $('h1').append('<img src="troll.png" alt="troll" class="trolled" style="width:100px;height:100px;">');
+                    $('.trolled').fadeIn(1500);
+                    $('.trolled').append('Time to reload your page');
+                });
+                $('button').click(function(){
+                    $('button').slideUp();
+                    $('.main').slideDown(1500);    
                 })
+                    // $('h1').append('<img src="troll.png" alt="troll" class="trolled" style="width:100px;height:100px;">');
             });
         </script>
     </head>
@@ -22,12 +28,14 @@
         <div class="wrapper">
             <div class="banner">
                 <h1>Just jQuery stuff</h1>
+                <img src="troll.png" alt="troll" class="trolled" style="width:80px;height:80px;">
             </div>
             <div class="nav">
                 <ul>
                     <li>Me! Me!</li><li>No me!</li><li>Click me!</li><li>Click meh!</li><li>Come on, me!</li>
                 </ul>
             </div>
+            <button>Click me to reveal content!</button>
             <div class="main">
             </div>
         </div>
