@@ -30,13 +30,14 @@
                         $('.main').slideDown(1000);
                     }, delay)
                 })
+                //Hulk toggle
                 $('h2').click(function(){
                     $('h2').html("<b>I SAID NOT TO YOU MONGREL</b>");
                     $('h2').css("color", "green");
                     $('p').append("...Oh now you've done it!");
                     $('p').css("color", "red");
                     $('.hulk').toggle();
-                })
+                });
 
                 //Banishing vader
                 $('.banish').click(function(){
@@ -47,7 +48,15 @@
                         $('.banish').text("Bring him back?");
                         $('h3').hide();
                     }, delay)
-                })
+                });
+
+                //Squash box
+                $('.squash').click(function(){
+                    $('.squash').text("Hammer down!");
+                    $('.box').attr('class', 'squashbox');
+                    $('.squash').attr('class', 'hammer');
+                    console.log("work");
+                });
                     // $('h1').append('<img src="troll.png" alt="troll" class="trolled" style="width:100px;height:100px;">');
             });
         </script>
@@ -78,8 +87,9 @@
                     <h3>NOOOOOOOOOOO!!!!</h3>
                 </div>
                 <div class="content">
-                    <h class="nothing">SQUASH HIM</h>
+                    <h class="nothing">SQUASH IT</h>
                     <button class="squash">E-Z Squash</button>
+                    <div class="box"></div>
                 </div>
                 <div class="content">
                 </div>
