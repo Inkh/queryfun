@@ -1,0 +1,11 @@
+*{
+    margin:0px;
+    padding:0px;
+    vertical-align: top;
+}
+.banner{
+    background-color:cyan;
+    height:100px;
+    width:100%;
+    display: none;
+}
