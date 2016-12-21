@@ -66,10 +66,15 @@ button{
     font-size: 20px;
 }
 .content{
+    box-sizing: border-box;
+    padding:10px;
     height: 400px;
-    width: 250px;
+    width: 280px;
     background-color: white;
     border: 2px solid black;
     display:inline-block;
-    margin: 40px 30px;
+    margin: 40px 25px;
+}
+p{
+    text-align: center;
 }
