@@ -34,8 +34,8 @@
                 $('h2').click(function(){
                     $('h2').html("<b>I SAID NOT TO YOU MONGREL</b>");
                     $('h2').css("color", "green");
-                    $('p').append("...Oh now you've done it!");
-                    $('p').css("color", "red");
+                    $('.over').append("...Oh now you've done it!");
+                    $('.over').css("color", "red");
                     $('.hulk').toggle();
                 });
 
@@ -57,6 +57,12 @@
                     $('.squash').attr('class', 'hammer');
                     console.log("work");
                 });
+                $('.dare').click(function(){
+                    $('.content').fadeOut();
+                    setTimeout(function(){
+                        $('.scold').show();
+                    }, delay);
+                })
                     // $('h1').append('<img src="troll.png" alt="troll" class="trolled" style="width:100px;height:100px;">');
             });
         </script>
@@ -77,7 +83,7 @@
                 <!-- <p>wat</p> -->
                 <div class="content">
                     <h2>DON'T CLICK ME</h2>
-                    <p>You won't like me when you click me. I mean, him. Him? It?</p>
+                    <p class="over">You won't like me when you click me. I mean, him. Him? It?</p>
                     <img src="hulk.jpg" alt="angry" class="hulk" style="height:200px;width:200px;">
                 </div>
                 <div class="content">
@@ -92,7 +98,10 @@
                     <div class="box"></div>
                 </div>
                 <div class="content">
+                    <h class="dare">Nothing to see here..</h>
+                    <p>Whatever you do, just don't click this title. Click the navbar instead.</p>
                 </div>
+                <p class="scold">Proud of yourself? You broke the page. Refresh please</p>
             </div>
             <div class="rick">
                 <img src="ricky.jpg" alt="rick" style="width:786px;height:535px">

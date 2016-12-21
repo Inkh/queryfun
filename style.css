@@ -28,6 +28,7 @@
     display: none;
     background-color: gray;
     text-align: center;
+    box-sizing: border-box;
 }
 .rick{
     width:100%;
@@ -75,7 +76,7 @@ ul li{
     display:inline-block;
     margin: 40px 25px;
 }
-p{
+.over{
     text-align: center;
     margin-top:10px;
 }
@@ -134,4 +135,18 @@ h3{
     height: 290px;
     width: 200px;
     font-size: 20px;
+}
+.scold{
+    color:white;
+    line-height:535px;
+    font-size: 50px;
+    text-align: center;
+    display:none;
+    margin:0px;
+}
+.dare{
+    margin-bottom:10px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
 }
