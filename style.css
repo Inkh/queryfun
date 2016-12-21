@@ -58,7 +58,7 @@ ul li{
     margin-left: 50px;
     display: none;
 }
-button{
+.togglebut{
     text-align: center;
     margin:0px 40%;
     height: 60px;
@@ -77,4 +77,31 @@ button{
 }
 p{
     text-align: center;
+    margin-top:10px;
+}
+.no{
+    display:none;
+    margin-top: 10px;
+}
+.nothing{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.meh{
+    display:block;
+}
+.banish{
+    text-align: center;
+    /*margin:0px 40%;*/
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+}
+.squash{
+    text-align: center;
+    /*margin:0px 40%;*/
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
 }

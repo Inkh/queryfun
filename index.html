@@ -22,17 +22,20 @@
                         $('.trolled').append('Time to reload your page');
                     }, delay)
                 });
+
                 $('button').click(function(){
                     //Main content reveal toggle
-                    $('button').slideUp();
+                    $('.togglebut').slideUp();
                     setTimeout(function(){
                         $('.main').slideDown(1000);
                     }, delay)
                 })
                 $('h2').click(function(){
-                    $('h2').html("<b>I SAID NOT TO YOU MONG</b>");
-                    $('h2').css("color", "red");
-                    $('p').append("...Oh now you've done it");
+                    $('h2').html("<b>I SAID NOT TO YOU MONGREL</b>");
+                    $('h2').css("color", "green");
+                    $('p').append("...Oh now you've done it!");
+                    $('p').css("color", "red");
+                    $('.no').toggle();
                 })
                     // $('h1').append('<img src="troll.png" alt="troll" class="trolled" style="width:100px;height:100px;">');
             });
@@ -49,17 +52,21 @@
                     <li>Me! Me!</li><li>No me!</li><li>Click me!</li><li>Click meh!</li><li>Come on, me!</li>
                 </ul>
             </div>
-            <button>Click me to reveal content!</button>
+            <button class="togglebut">Click me to reveal content!</button>
             <div class="main">
                 <!-- <p>wat</p> -->
                 <div class="content">
-                    <h2>Don't click on me</h2>
+                    <h2>DON'T CLICK ME</h2>
                     <p>You won't like me when you click me. I mean, him. Him? It?</p>
+                    <img src="hulk.jpg" alt="angry" class="no" style="height:200px;width:200px;">
                 </div>
                 <div class="content">
-                    <h class="nothing">"BANISH HIM"</h>
+                    <h class="nothing">BANISH HIM</h>
+                    <button class="banish">E-Z Banish</button>
                 </div>
                 <div class="content">
+                    <h class="nothing">SQUASH HIM</h>
+                    <button class="squash">E-Z Squash</button>
                 </div>
                 <div class="content">
                 </div>
