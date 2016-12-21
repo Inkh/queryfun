@@ -35,7 +35,18 @@
                     $('h2').css("color", "green");
                     $('p').append("...Oh now you've done it!");
                     $('p').css("color", "red");
-                    $('.no').toggle();
+                    $('.hulk').toggle();
+                })
+
+                //Banishing vader
+                $('.banish').click(function(){
+                    var delay = 1400;
+                    $('.ban').fadeOut(1500);
+                    $('h3').show();
+                    setTimeout(function(){
+                        $('.banish').text("Bring him back?");
+                        $('h3').hide();
+                    }, delay)
                 })
                     // $('h1').append('<img src="troll.png" alt="troll" class="trolled" style="width:100px;height:100px;">');
             });
@@ -58,11 +69,13 @@
                 <div class="content">
                     <h2>DON'T CLICK ME</h2>
                     <p>You won't like me when you click me. I mean, him. Him? It?</p>
-                    <img src="hulk.jpg" alt="angry" class="no" style="height:200px;width:200px;">
+                    <img src="hulk.jpg" alt="angry" class="hulk" style="height:200px;width:200px;">
                 </div>
                 <div class="content">
                     <h class="nothing">BANISH HIM</h>
                     <button class="banish">E-Z Banish</button>
+                    <img src="vader.jpg" alt="darkside" class="ban">
+                    <h3>NOOOOOOOOOOO!!!!</h3>
                 </div>
                 <div class="content">
                     <h class="nothing">SQUASH HIM</h>

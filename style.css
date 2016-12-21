@@ -60,9 +60,9 @@ ul li{
 }
 .togglebut{
     text-align: center;
-    margin:0px 40%;
+    /*margin:0px 40%;*/
     height: 60px;
-    width: 200px;
+    width: 100%;
     font-size: 20px;
 }
 .content{
@@ -79,7 +79,7 @@ p{
     text-align: center;
     margin-top:10px;
 }
-.no{
+.hulk{
     display:none;
     margin-top: 10px;
 }
@@ -88,9 +88,9 @@ p{
     font-size: 1.5em;
     font-weight: bold;
 }
-.meh{
+/*.meh{
     display:block;
-}
+}*/
 .banish{
     text-align: center;
     /*margin:0px 40%;*/
@@ -104,4 +104,13 @@ p{
     height: 60px;
     width: 200px;
     font-size: 20px;
+}
+.ban{
+    height:150px;
+    width:250px;
+    margin-top: 30px;
+}
+h3{
+    color:red;
+    display:none;
 }
