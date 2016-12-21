@@ -7,14 +7,28 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-                $('.banner').fadeIn("slow");
+                $('.banner').fadeIn();
+                $('.nav').fadeIn("slow");
+                $('.main').fadeIn(1500);
+                $('.nav').click(function(){
+                    $('.nav').slideToggle();
+                    $('h1').text("You just got trolled");
+                    $('h1').append('<img src="troll.png" alt="troll" class="trolled" style="width:100px;height:100px;">');
+                })
             });
         </script>
     </head>
     <body>
         <div class="wrapper">
             <div class="banner">
-                <h1>Am I doing it?</h1>
+                <h1>Just jQuery stuff</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Me! Me!</li><li>No me!</li><li>Click me!</li><li>Click meh!</li><li>Come on, me!</li>
+                </ul>
+            </div>
+            <div class="main">
             </div>
         </div>
     </body>
